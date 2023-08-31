@@ -1,0 +1,20 @@
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.profilePhoto {
+  width: 70px;
+  transition: .3s;
+  border-radius: 4px;
+  border: 2px solid cyan;
+}
+
+.active { 
+  width: 70px;
+  transition: .3s;
+  border-radius: 4px;
+  transform: scale(7,7);
+}

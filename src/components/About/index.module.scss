@@ -1,0 +1,35 @@
+.about_cont {
+  border: 1px solid cyan;
+  border-radius: 4px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  padding: 10px;
+  h2 {
+    font-size: 14px;
+  }
+}
+
+.active {
+  border: 1px solid cyan;
+  border-radius: 4px;
+  color: cyan;
+  background-color: #3a3a3a;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+  width: 120px;
+  transition: .3s;
+  h2 {
+    font-size: 10px;
+  }
+  p {
+    font-size: 4px;
+  }
+  transform: scale(8,8);
+}
