@@ -1,0 +1,35 @@
+.cont {
+  display: flex;
+  justify-content: center;
+
+}
+
+.btn {
+  border: 1px solid transparent;
+  background-color: cyan;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .2s;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid cyan;
+  }
+}
+
+.videoCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  video {
+    border-radius: 12px;
+    width: 400px;
+    aspect-ratio: 9/16;
+  }
+}

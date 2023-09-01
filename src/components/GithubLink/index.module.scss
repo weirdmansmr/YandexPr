@@ -1,0 +1,15 @@
+.git {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  svg {
+    fill: cyan;
+    width: 100px;
+    transition: .3s;
+    &:hover {
+      fill: #3a3a3a;
+    }
+  }
+}

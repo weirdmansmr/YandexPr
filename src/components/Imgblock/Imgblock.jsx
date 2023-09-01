@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import profile from "../../assets/profile-picture.jpeg";
+import profile from "../../assets/profile.jpg";
 import st from "./index.module.scss";
 
 const Imgblock = () => {
@@ -7,9 +7,11 @@ const Imgblock = () => {
 
 	return (
 		<div className={st.cont}>
-		<h3>Фотография</h3>
+			<h3>Фотография</h3>
 			<img
-				className={active ? st.active : st.profilePhoto}
+				className={
+					active ? `${st.profilePhoto} ${st.active}` : `${st.profilePhoto}`
+				}
 				onClick={() => setActive(!active)}
 				src={profile}
 				alt="profile photo"

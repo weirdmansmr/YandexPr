@@ -6,19 +6,19 @@ const About = () => {
 
 	return (
 		<div
-			className={active ? st.active : st.about_cont}
+			className={active ? `${st.about_cont} ${st.active}` : `${st.about_cont}`}
 			onClick={() => setActive(!active)}
 		>
-			<h2>Как я оказался в IT?</h2>
-			{active ? (
+			{!active && <h2>Как я оказался в IT?</h2>}
+			{active && (
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-					delectus cumque iusto quas fugit! Deserunt officiis reiciendis, magni
-					consequatur reprehenderit a necessitatibus et totam doloremque
-					repudiandae. Consequatur voluptates accusantium dolorem?
+					При поступлении в ВУЗ я решил выбрать ту профессию, в которой я смогу
+					совместить приятное с полезным. Так как я очень любил 2 вещи
+					(компьютеры и авто), выбора было у меня немного. А учитывая мой
+					"математический" склад ума, выбор в итоге пал на программирование, где
+					у меня были: взлёты, падения, паузы; но в итоге - я стал всё больше
+					времени уделять программированию и саморазвитию.
 				</p>
-			) : (
-				``
 			)}
 		</div>
 	);

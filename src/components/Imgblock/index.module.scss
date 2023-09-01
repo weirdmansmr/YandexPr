@@ -12,9 +12,9 @@
   border: 2px solid cyan;
 }
 
-.active { 
-  width: 70px;
-  transition: .3s;
-  border-radius: 4px;
+.active {
+  border: 0;
   transform: scale(7,7);
+  -webkit-transform: scale(7,7);
+  -moz-transform: scale(7,7);
 }
